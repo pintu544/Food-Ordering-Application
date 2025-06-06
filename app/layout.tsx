@@ -14,12 +14,7 @@ interface RootLayoutProps {
   children: ReactNode
 }
 
-/**
- * @param {RootLayoutProps} props
- */
-export default function RootLayout({
-  children,
-}: RootLayoutProps) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={inter.className}>
