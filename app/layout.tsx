@@ -10,12 +10,16 @@ export const metadata = {
   description: 'Role-based food ordering application',
 }
 
-export default function RootLayout(props: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode
+}) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <SessionProvider>
-          {props.children}
+          {children}
         </SessionProvider>
       </body>
     </html>
