@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { SessionProvider } from '@/components/SessionProvider'
+import { ReactNode } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,6 +10,14 @@ export const metadata = {
   description: 'Role-based food ordering application',
 }
 
+/**
+ * @typedef {Object} RootLayoutProps
+ * @property {ReactNode} children
+ */
+
+/**
+ * @param {RootLayoutProps} props
+ */
 export default function RootLayout({
   children,
 }) {
